@@ -28,3 +28,24 @@ setInterval(function () {
         winnerFeed.removeChild(winnerFeed.lastChild);
     }
 }, 5000); // Add a new winner every 5 seconds
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    let div = document.getElementById('moment1')
+    div.textContent = moment(Date.now()).subtract({days: 0, hours: 6}).format('MMM D, YYYY - hh.mm');
+
+    let div2 = document.getElementById('moment2')
+    div2.textContent = moment(Date.now()).subtract({days: 1, hours: 5}).format('MMM D, YYYY');
+    
+    let div3 = document.getElementById('moment3')
+    div3.textContent = moment(Date.now()).subtract({days: 2, hours: 4}).format('MMM D, YYYY');
+    
+    let div4 = document.getElementById('moment4')
+    div4.textContent = moment(Date.now()).subtract({days: 3, hours: 3}).format('MMM D, YYYY');
+    
+    let div5 = document.getElementById('moment5')
+    div5.textContent = moment(Date.now()).subtract({days: 4, hours: 3}).format('MMM D, YYYY');
+    
+    let div6 = document.getElementById('moment6')
+    div6.textContent = moment(Date.now()).subtract({days: 5, hours: 3}).format('MMM D, YYYY');
+});
