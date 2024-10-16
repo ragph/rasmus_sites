@@ -10563,7 +10563,7 @@ h6 {
 
 .page-main a:not([href^="/"], [href^="."], [href^="#"], [href*="swissinfo.ch"], [href*="tvsvizzera.it"], [href*=".localhost"], [href*=".go-vip.net"], .film-selection-carousel a, .caption-heading__link, .caption-image__link, .compact-news-carousel a, .spotlight-carousel a, .author__content a, .page-heading-container a, .author-social-profile-item__link, .compact-teaser-card__link, .teaser-card__link, .teaser-hero__link, .teaser-wide-card__link, .aaa a):before,
 .page-main a[target=_blank]:not(.caption-heading__link, .caption-image__link, .compact-news-carousel a, .spotlight-carousel a, .author__content a, .page-heading-container a, .author-social-profile-item__link, .compact-teaser-card__link, .teaser-card__link, .teaser-hero__link, .teaser-wide-card__link, .aaa a):before {
-	background-image: url(/eng/wp-content/themes/swissinfo-theme/assets/icon-external-link.svg);
+	/* background-image: url(/eng/wp-content/themes/swissinfo-theme/assets/icon-external-link.svg); */
 	background-position: 0;
 	background-repeat: no-repeat;
 	content: "";
@@ -11009,7 +11009,7 @@ h6 {
 
 .article-main a:not([href^="/"], [href^="."], [href^="#"], [href*="swissinfo.ch"], [href*="tvsvizzera.it"], [href*=".localhost"], [href*=".go-vip.net"], .film-selection-carousel a, .caption-heading__link, .caption-image__link, .compact-news-carousel a, .spotlight-carousel a, .author__content a, .page-heading-container a, .author-social-profile-item__link, .compact-teaser-card__link, .teaser-card__link, .teaser-hero__link, .teaser-wide-card__link, .aaa a):before,
 .article-main a[target=_blank]:not(.caption-heading__link, .caption-image__link, .compact-news-carousel a, .spotlight-carousel a, .author__content a, .page-heading-container a, .author-social-profile-item__link, .compact-teaser-card__link, .teaser-card__link, .teaser-hero__link, .teaser-wide-card__link, .aaa a):before {
-	background-image: url(/eng/wp-content/themes/swissinfo-theme/assets/icon-external-link.svg);
+	/* background-image: url(/eng/wp-content/themes/swissinfo-theme/assets/icon-external-link.svg); */
 	background-position: 0;
 	background-repeat: no-repeat;
 	content: "";

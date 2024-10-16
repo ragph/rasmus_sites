@@ -1,7 +1,7 @@
-@font-face{font-family:"SWI Aktiv Grotesk";font-style:normal;font-weight:400;font-display:fallback;src:url('https://www.swissinfo.ch/eng/wp-content/themes/swissinfo-theme/assets/aktivgrotesk_w_rg-woff2-data.woff2') format('woff2');}
-@font-face{font-family:"SWI Aktiv Grotesk";font-style:normal;font-weight:300;font-display:fallback;src:url('https://www.swissinfo.ch/eng/wp-content/themes/swissinfo-theme/assets/aktivgrotesk_w_lt-woff2-data.woff2') format('woff2');}
-@font-face{font-family:"SWI Noto Serif";font-style:normal;font-weight:400;font-display:fallback;src:url('https://www.swissinfo.ch/eng/wp-content/themes/swissinfo-theme/assets/noto-serif-v20-latin_cyrillic-regular-woff2-data.woff2') format('woff2');}
-@font-face{font-family:"SWI Noto Serif";font-style:normal;font-weight:bold;font-display:fallback;src:url('https://www.swissinfo.ch/eng/wp-content/themes/swissinfo-theme/assets/noto-serif-v20-latin_cyrillic-700-woff2-data.woff2') format('woff2');}
+@font-face{font-family:"SWI Aktiv Grotesk";font-style:normal;font-weight:400;font-display:fallback;src:url(./fonts/aktivgrotesk_w_rg-woff2-data.woff2) format('woff2');}
+@font-face{font-family:"SWI Aktiv Grotesk";font-style:normal;font-weight:300;font-display:fallback;src:url(./fonts/aktivgrotesk_w_lt-woff2-data.woff2) format('woff2');}
+@font-face{font-family:"SWI Noto Serif";font-style:normal;font-weight:400;font-display:fallback;src:url(./fonts/noto-serif-v20-latin_cyrillic-regular-woff2-data.woff2) format('woff2');}
+@font-face{font-family:"SWI Noto Serif";font-style:normal;font-weight:bold;font-display:fallback;src:url(./fonts/noto-serif-v20-latin_cyrillic-700-woff2-data.woff2) format('woff2');}
 
 .wp-block-audio :where(figcaption) {
 	color: #555;
