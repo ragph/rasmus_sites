@@ -1573,7 +1573,7 @@
            }
 
            function ji(e, t, i) {
-              U(t, (n => xe(`You can't use [$${t}] without first installing the "${e}" plugin here: https://alpinejs.dev/plugins/${i}`, n)))
+              U(t, (n => xe(`You can't use [$${t}] without first installing the "${e}" plugin here: #/${i}`, n)))
            }
            U("id", ((e, {
               cleanup: t
@@ -1940,7 +1940,7 @@
            function Xi() {}
 
            function Gi(e, t, i) {
-              se(t, (n => xe(`You can't use [x-${t}] without first installing the "${e}" plugin here: https://alpinejs.dev/plugins/${i}`, n)))
+              se(t, (n => xe(`You can't use [x-${t}] without first installing the "${e}" plugin here: #${i}`, n)))
            }
            Hi.inline = (e, {
               value: t,
@@ -2760,7 +2760,7 @@
            Object.defineProperty(t, "__esModule", {
               value: !0
            });
-           var i = "https://reco.ebu.io/news-reco-swi.js",
+           var i = "#",
               n = null !== document.querySelector('script[src="'.concat(i, '"]'));
            t.default = function () {
               return {
@@ -3935,31 +3935,31 @@
               n = function (e) {
                  return '\n        <div class="'.concat(i, '">\n            ').concat(e, "\n        </div>\n    ")
               };
-           t.default = function (e, t) {
-              var s = t.modifiers,
-                 r = function (e, t) {
-                    var i = t.modifiers;
-                    if (!window.swiTheme.visibilityNotice) return "";
-                    if (!e.classList.contains("--article-is-hidden")) return "";
-                    var n = window.swiTheme.visibilityNotice.text;
-                    return i.includes("detailed") && (n += " " + window.swiTheme.visibilityNotice.detailed), n
-                 }(e, {
-                    modifiers: s
-                 }) || function (e, t) {
-                    var i, n = t.modifiers;
-                    if (!window.swiTheme.previewNotice) return "";
-                    var s = e.className.match(/--post-status-([a-z]+)/);
-                    if (null === s) return "";
-                    var r = s[1],
-                       o = window.swiTheme.postStatus;
-                    if (![o.Draft, o.Future, o.Pending, o.Unpublished].includes(r)) return "";
-                    var a = null !== (i = window.swiTheme.previewNotice[r]) && void 0 !== i ? i : "";
-                    return n.includes("detailed") && (a += " " + window.swiTheme.previewNotice.detailed), a
-                 }(e, {
-                    modifiers: s
-                 });
-              "" !== r && (e.style.position = "relative", null === e.querySelector(".".concat(i)) && e.insertAdjacentHTML("beforeend", n(r)))
-           }
+         //   t.default = function (e, t) {
+         //      var s = t.modifiers,
+         //         r = function (e, t) {
+         //            var i = t.modifiers;
+         //            if (!window.swiTheme.visibilityNotice) return "";
+         //            if (!e.classList.contains("--article-is-hidden")) return "";
+         //            var n = window.swiTheme.visibilityNotice.text;
+         //            return i.includes("detailed") && (n += " " + window.swiTheme.visibilityNotice.detailed), n
+         //         }(e, {
+         //            modifiers: s
+         //         }) || function (e, t) {
+         //            var i, n = t.modifiers;
+         //            if (!window.swiTheme.previewNotice) return "";
+         //            var s = e.className.match(/--post-status-([a-z]+)/);
+         //            if (null === s) return "";
+         //            var r = s[1],
+         //               o = window.swiTheme.postStatus;
+         //            if (![o.Draft, o.Future, o.Pending, o.Unpublished].includes(r)) return "";
+         //            var a = null !== (i = window.swiTheme.previewNotice[r]) && void 0 !== i ? i : "";
+         //            return n.includes("detailed") && (a += " " + window.swiTheme.previewNotice.detailed), a
+         //         }(e, {
+         //            modifiers: s
+         //         });
+         //      "" !== r && (e.style.position = "relative", null === e.querySelector(".".concat(i)) && e.insertAdjacentHTML("beforeend", n(r)))
+         //   }
         },
         3672: function (e, t) {
            "use strict";
@@ -4107,7 +4107,7 @@
               return /^urn:(swi|rts|srf|rtr|rsi):(video|audio):[0-9a-fA-F-]+$/.test(e)
            };
            t.buildMediaCompositionUrl = function (e) {
-              return (0, t.validateUrn)(e) ? "https://il.srgssr.ch/integrationlayer/2.1/mediaComposition/byUrn/".concat(e, "?onlyChapters=true&vector=portalplay") : (i = e, n = window.swiVideoDelivery, s = n.baseUrl, r = n.locale, o = n.uniqueId, a = "" !== o ? "".concat(o, "/config") : "config", "".concat(s, "/video-delivery/player/").concat(i, "/").concat(r.toUpperCase(), "/").concat(a));
+              return (0, t.validateUrn)(e) ? "#".concat(e, "?onlyChapters=true&vector=portalplay") : (i = e, n = window.swiVideoDelivery, s = n.baseUrl, r = n.locale, o = n.uniqueId, a = "" !== o ? "".concat(o, "/config") : "config", "".concat(s, "/video-delivery/player/").concat(i, "/").concat(r.toUpperCase(), "/").concat(a));
               var i, n, s, r, o, a
            };
            t.aspectRatioForMediaComposition = function (e) {
@@ -5371,7 +5371,7 @@
         },
         3832: function (e) {
            "use strict";
-           e.exports = window.wp.url
+           e.exports = ''
         }
      },
      t = {};

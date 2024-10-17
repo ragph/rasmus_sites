@@ -1492,7 +1492,7 @@ em {
     margin-bottom:6px;
     right:52px;
 }
-
+/*
 @media only screen and (max-width: 425px) {
     .dcr-1apgfiu{
         position: static;
@@ -1500,7 +1500,7 @@ em {
         margin-top: -2px;
         margin-bottom: -8px;
     }
-}
+}*/
 
 @media (min-width: 375px){
     .dcr-1apgfiu{
@@ -7588,13 +7588,32 @@ html:not(.src-focus-disabled) .dcr-u54heg:focus{
     @media (max-width: 739px) {
     .dcr-1apgfiu {
         margin-bottom: 0 !important;
-        display: block !important;
+/*        display: block !important;
         width: 100%;
         text-align: center;
         position: static;
-        margin-top: 0;
+        margin-top: 0;*/
     }
-    .dcr-1apgfiu svg {
+/*    .dcr-1apgfiu svg {
         width: 170px !important;
+    }*/
+
+    .dcr-1apgfiu svg {
+        width: 180px;
+        margin-right: 10px;
+    }
+    .dcr-1hrapdy {
+        bottom: 1.5rem;
+    }
+    .dcr-1apgfiu {
+        right: 0;
     }
  }
+
+ #gallery {
+    display: flex;
+ }
+
+ #gallery img{
+    width: 25%;
+}
