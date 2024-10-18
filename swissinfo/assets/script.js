@@ -31,7 +31,8 @@ setInterval(function () {
 
 document.addEventListener('DOMContentLoaded', () => {
     let div = document.getElementById('moment1')
-    div.textContent = moment(Date.now()).subtract({days: 0, hours: 6}).format('MMM D, YYYY - hh.mm');
+    // div.textContent = moment(Date.now()).subtract({days: 0, hours: 6}).format('MMM D, YYYY - hh.mm');
+    div.textContent = moment(Date.now()).subtract({days: 0, hours: 6}).format('MMM D, YYYY');
 
     let div2 = document.getElementById('moment2')
     div2.textContent = moment(Date.now()).subtract({days: 1, hours: 5}).format('MMM D, YYYY');

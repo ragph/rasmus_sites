@@ -54,3 +54,10 @@
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     }
 }
+
+@media (min-width: 1024px) {
+    .title-header {
+        font-size: 41px;
+        font-weight: 400;
+    }
+}

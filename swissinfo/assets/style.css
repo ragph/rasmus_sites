@@ -737,3 +737,11 @@ a:where(:not(.wp-element-button)) {
 	line-height: 1.6;
 }
 :root{--swissinfo-theme--page--color:var(--swissinfo-theme--color--variation--turquoise-blue);}
+
+.highlight {
+    color: #2aa198 !important;
+}
+
+.highlight_red {
+    color: #d41f42 !important;
+}
