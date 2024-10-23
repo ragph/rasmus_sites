@@ -1,0 +1,381 @@
+/* Skeleton Renderer styles */
+#vf-skeleton-container {
+    display: block;
+    margin: 20px 0;
+    overflow: hidden;
+ }
+
+ .vf-skeleton-generic-block {
+    background-color: #ebebeb;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+ }
+
+ .vf-skeleton-generic-block::after {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    transform: translateX(-100%);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0));
+    animation: shimmer 1s infinite;
+    content: '';
+ }
+
+ @keyframes shimmer {
+    100% {
+       transform: translateX(100%);
+    }
+ }
+
+ .vf-skeleton-conversations-container .vf-skeleton-generic-block:not(:first-child) {
+    margin-top: 8px;
+ }
+
+ .vf-skeleton-comments-container {
+    height: 112px;
+    margin-top: 28px;
+ }
+
+ .vf-skeleton-comments-img-wrapper {
+    width: 46px;
+    float: left;
+ }
+
+ .vf-skeleton-comments-img-wrapper .vf-skeleton-generic-block {
+    border-radius: 100%;
+ }
+
+ .vf-skeleton-comments-line-wrapper {
+    float: left;
+    width: 80%;
+    margin-left: 14px;
+ }
+
+ .vf-skeleton-comments-line-wrapper .vf-skeleton-generic-block:nth-child(1) {
+    width: 45%
+ }
+
+ .vf-skeleton-comments-line-wrapper .vf-skeleton-generic-block:nth-child(4) {
+    width: 55%
+ }
+
+ @media (min-width: 757px) {
+    .vf-skeleton-comments-line-wrapper {
+       width: 90%;
+    }
+
+    .vf-skeleton-comments-line-wrapper .vf-skeleton-generic-block:nth-child(1) {
+       width: 20%
+    }
+
+    .vf-skeleton-comments-line-wrapper .vf-skeleton-generic-block:nth-child(4) {
+       width: 80%
+    }
+ }
+
+ .vf-skeleton-livereviews-rating-container {
+    height: 180px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+ }
+
+ .phoenix-player .phx-audio-ui {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata {
+    display: flex;
+    flex-wrap: wrap
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls {
+    flex: 0 0 auto;
+    margin: 20px
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-skip-back-btn,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-skip-forward-btn,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-play-btn,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-stop-btn,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-pause-btn {
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    padding: 0;
+    background: transparent
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-skip-back-btn:focus,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-skip-forward-btn:focus,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-play-btn:focus,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-stop-btn:focus,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-pause-btn:focus {
+    outline-style: dotted;
+    outline-width: 1px;
+    outline-color: #000000
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls.advertising .phx-skip-forward-btn,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls.advertising .phx-skip-back-btn {
+    pointer-events: none
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls.advertising .phx-skip-forward-btn>svg,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls.advertising .phx-skip-back-btn>svg {
+    opacity: 0.5
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-skip-back-btn {
+    margin-right: 25px
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-skip-forward-btn {
+    margin-left: 25px
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-pause-btn>svg,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-stop-btn>svg,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-play-btn>svg {
+    width: 60px
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-pause-btn:hover polygon,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-stop-btn:hover polygon,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-play-btn:hover polygon {
+    fill: #e60505
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-stop-btn.media-loading {
+    pointer-events: none
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .primary-controls .phx-stop-btn.media-loading>svg {
+    opacity: 0.5
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 999;
+    align-items: center
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-thumbnail-wrapper {
+    box-shadow: 0px 0px 5px 1px #cbcbcb;
+    height: 84.375px;
+    flex: 0 0 auto;
+    margin-left: 20px
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-thumbnail-wrapper img {
+    width: auto;
+    height: 84.375px;
+    object-fit: contain;
+    object-position: center
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-metadata #media-metadata-audio {
+    box-sizing: border-box;
+    padding: 0 20px
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-metadata #media-metadata-audio .phoenix-showname,
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-metadata #media-metadata-audio .phoenix-title {
+    padding: 0;
+    margin: 0
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-metadata #media-metadata-audio .phoenix-showname {
+    font-size: 0.8rem;
+    font-weight: bold
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-metadata #media-metadata-audio .phoenix-title {
+    font-size: 0.85rem;
+    line-height: 1.188rem;
+    max-height: calc(1.188rem * 2);
+    overflow: hidden
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-metadata #media-metadata-audio.advertising .phoenix-showname {
+    text-transform: uppercase
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner button label {
+    display: block;
+    position: absolute;
+    bottom: calc(-0.6875rem + -6px);
+    padding: 6px;
+    border-radius: 4px;
+    background: #263238;
+    font-size: 0.6875rem;
+    font-weight: bold;
+    white-space: nowrap;
+    transform: translateY(0px);
+    opacity: 0;
+    pointer-events: none;
+    line-height: 1rem
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner button:hover label,
+ .phoenix-player .phx-audio-ui .audio-ui-inner button:focus label {
+    animation: tooltipAnimation 4s;
+    z-index: 1;
+    color: white
+ }
+
+ @keyframes tooltipAnimation {
+    0% {
+       opacity: 0;
+       transform: translateY(-40px)
+    }
+
+    5% {
+       opacity: 1;
+       transform: translateY(-70px)
+    }
+
+    95% {
+       opacity: 1;
+       transform: translateY(-70px)
+    }
+
+    100% {
+       opacity: 0;
+       transform: translateY(-40px)
+    }
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .secondary-controls {
+    display: flex;
+    margin: 0 20px;
+    position: relative;
+    width: calc(100% - 40px)
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .secondary-controls .audio-seekbar-wrapper {
+    flex: 1 0 100px;
+    padding: 5px 0
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .secondary-controls .time-metadata {
+    padding: 8px 20px;
+    line-height: normal
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .secondary-controls .time-metadata span {
+    color: #000;
+    text-shadow: none;
+    opacity: 1;
+    font-size: 0.8rem
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .secondary-controls .volume-controls-container .phx-volume-controls {
+    display: flex
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .secondary-controls .volume-controls-container .phx-muted-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    box-sizing: content-box;
+    position: relative;
+    padding: 5px 0
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .secondary-controls .volume-controls-container .phx-muted-btn.audio label {
+    bottom: calc(-0.6875rem - 29px);
+    right: 0
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .secondary-controls .volume-controls-container .phx-volume-slider.audio {
+    width: 100%;
+    line-height: 26px
+ }
+
+ .phoenix-player .phx-audio-ui .audio-ui-inner .phx-volume-slider.audio label {
+    bottom: calc(-0.6875rem - 19px)
+ }
+
+ .phoenix-player.phx-small .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-metadata #media-metadata-audio,
+ .phoenix-player.phx-extra-small .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-metadata #media-metadata-audio {
+    padding: 5px 20px 0 20px
+ }
+
+ .phoenix-player.phx-small .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-thumbnail-wrapper,
+ .phoenix-player.phx-extra-small .phx-audio-ui .audio-ui-inner .primary-controls-and-metadata .thumbnail-metadata .audio-ui-thumbnail-wrapper {
+    display: none
+ }
+
+
+ .phoenix-player .phx-video-ui {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+ }
+
+
+ .phoenix-player {
+    position: relative;
+    display: block;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%
+ }
+
+ .phoenix-player.phoenix-video {
+    background-color: rgb(40, 40, 40)
+ }
+
+ .phoenix-player.phoenix-audio .phoenix-core-container {
+    display: none
+ }
+
+ .phoenix-player.phoenix-audio.advertising .phoenix-core-container,
+ .phoenix-player.phoenix-audio.advertising .phoenix-ad-ui {
+    position: fixed !important;
+    top: auto !important;
+    right: 20px !important;
+    bottom: 20px !important;
+    left: auto !important;
+    width: 640px !important;
+    height: 360px !important;
+    overflow: hidden
+ }
+
+ .phoenix-player.phoenix-audio.advertising .phoenix-core-container {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid black
+ }
+
+ .phoenix-player.phoenix-audio.advertising .phoenix-ad-ui {
+    pointer-events: none
+ }
+
+ @media (pointer: coarse),
+ (hover: none) {
+    .phoenix-player label.phx-tooltip {
+       position: absolute;
+       width: 1px;
+       height: 1px;
+       margin: -1px;
+       padding: 0 !important;
+       border: 0;
+       overflow: hidden;
+       clip: rect(0, 0, 0, 0);
+       white-space: nowrap;
+       opacity: 0 !important
+    }
+ }
