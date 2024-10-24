@@ -992,7 +992,7 @@ div.viafoura.info {
 }
 
 .feed .ad-risingstar .risingstar>div:after {
-    background: url("data:image/gif;base64,R0lGODlhVQAJAIABAKqqqv///yH5BAEAAAEALAAAAABVAAkAAAJZjI+py+0Po5y0WgTyyTqAbXCfx4ViaHbn6KUfO4psAqNo3WKgfSuzpsLEdA0Z77UruYg2JWmIfPZ+Dpw1hz3ueE3mMEktgjvcExZ3c67G0ezsAo/L5/S6pQAAOw==") no-repeat 100%;
+    /* background: url("data:image/gif;base64,R0lGODlhVQAJAIABAKqqqv///yH5BAEAAAEALAAAAABVAAkAAAJZjI+py+0Po5y0WgTyyTqAbXCfx4ViaHbn6KUfO4psAqNo3WKgfSuzpsLEdA0Z77UruYg2JWmIfPZ+Dpw1hz3ueE3mMEktgjvcExZ3c67G0ezsAo/L5/S6pQAAOw==") no-repeat 100%; */
     content: "";
     height: 15px;
     left: 100%;

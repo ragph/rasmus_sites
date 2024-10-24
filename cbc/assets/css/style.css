@@ -390,7 +390,6 @@
 
 .TZrnKuiXkfQj {
    border: 1px solid #e0e0e0;
-   margin: 1rem auto;
 }
 
 .TZrnKuiXkfQj p {
@@ -400,3 +399,21 @@
    margin: 0;
    text-align: left;
 }
+
+.winners-container {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-column-gap: 10px;
+   grid-row-gap: 10px;
+}
+
+@media (max-width: 768px) {
+   .winners-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+   }
+ }
