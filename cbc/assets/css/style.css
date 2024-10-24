@@ -416,4 +416,16 @@
       grid-column-gap: 10px;
       grid-row-gap: 10px;
    }
- }
+}
+
+
+.HqpbRfPjjgit {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: nowrap;
+   height: 48px;
+   margin: 0;
+   position: relative;
+   white-space: nowrap;
+}
