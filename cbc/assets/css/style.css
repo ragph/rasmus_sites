@@ -418,7 +418,7 @@
    }
 }
 
-
+/* Nav Menus */
 .HqpbRfPjjgit {
    display: flex;
    justify-content: space-between;
@@ -428,4 +428,34 @@
    margin: 0;
    position: relative;
    white-space: nowrap;
+}
+
+.HqpbRfPjjgit ul {
+   list-style-type: none;
+   display: flex;
+   padding: 0;
+   margin: 0;
+}
+
+.HqpbRfPjjgit .GXCYysqZodwR {
+   color: #fff;
+   font-weight: 700;
+   text-decoration: none;
+   margin: 1rem;
+}
+.HqpbRfPjjgit .GXCYysqZodwR:hover {
+   text-decoration: underline;
+}
+
+.show-mobile {
+   display: none !important;
+}
+
+@media (max-width: 768px) {
+   .show-mobile {
+      display: block !important;
+   }
+   .HqpbRfPjjgit ul {
+      display: none;
+   }
 }
