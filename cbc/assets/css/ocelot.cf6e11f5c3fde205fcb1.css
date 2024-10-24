@@ -18,7 +18,8 @@
 
 body {
     font-size: 16px;
-    min-width: 20em
+    min-width: 20em;
+    overflow-x: hidden;
 }
 
 html {
@@ -26,7 +27,8 @@ html {
     background-color: #f4f4f4;
     color: #000;
     font-family: Radio Canada, sans-serif;
-    line-height: 1.2
+    line-height: 1.2;
+    overflow-x: hidden;
 }
 
 input:focus {
