@@ -204,3 +204,11 @@
     outline-offset: -3px;
     pointer-events: none
 }
+
+#gallery {
+    display: flex;
+ }
+
+ #gallery img{
+    width: 25%;
+}
