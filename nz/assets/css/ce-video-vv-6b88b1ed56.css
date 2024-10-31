@@ -1,0 +1,31 @@
+.muteIcon:after,
+.playPauseIcon:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%
+}
+
+.circle_animation {
+    stroke-dasharray: 138;
+    stroke-dashoffset: 138;
+    transition: all .1s linear
+}
+
+.verticalvideoskin svg {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+}
+
+.verticalvideoskin:before {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0
+}

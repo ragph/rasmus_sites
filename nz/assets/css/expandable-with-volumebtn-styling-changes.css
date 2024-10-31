@@ -1,0 +1,231 @@
+#exp_div {
+  /* ... your existing styles ... */
+  width: 970px;
+  /*    height: 545px;*/
+  position: relative;
+  transition: height 0.5s ease-in-out;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  border: 0px none;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  overflow: hidden;
+  /*    overflow: auto;*/
+  display: none;
+  -webkit-transition: height 1.1s;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 250px;
+}
+
+#exp_clip {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /*    width: 100%;*/
+  width: 100%;
+  /*    width: 320px;*/
+  height: auto;
+  /*    height: 50px;*/
+  max-width: 970px;
+  max-height: 545px;
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 990px) and (min-width: 769px) {
+  #exp_clip,
+  #exp_crtv {
+    width: 750px;
+    height: 200px;
+  }
+  #exp_div.expanded #exp_clip,
+  #exp_div.expanded #exp_crtv {
+    height: 420px;
+  }
+}
+
+/*@media (max-width: 768px) {
+    #exp_clip, #exp_crtv {
+      width: 320px;
+      height: 50px;
+    }
+  
+    #exp_div.expanded #exp_clip,
+    #exp_div.expanded #exp_crtv {
+      height: 480px; /* Adjust for 9:16 aspect ratio */
+#exp_crtv {
+  /*    position: absolute; /* Positioned relative to exp_clip */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*    width: 320px;*/
+  height: auto;
+  /*    height: 50px;*/
+  visibility: hidden;
+  max-width: 970px;
+  max-height: 545px; /* Maximum height in expanded state  */
+}
+
+#exp_controls {
+  position: absolute;
+  top: 2%;
+  right: 0;
+  z-index: 2;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 80%;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+#exp_expandbtn {
+  position: absolute;
+  /* bottom: 0.75rem;
+  right: 0.75rem; */
+  top: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  cursor: pointer;
+  pointer-events: auto;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  border-radius: 1.5rem;
+  padding: 0.4585rem;
+}
+
+#exp_expandbtn span {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #exp_expandbtn {
+    align-items: center;
+
+    text-decoration-line: none;
+    color: var(--sys-text-dark, #151515);
+
+    font-feature-settings: "ss01" on;
+    font-family: "Inter-variable", system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 0.75rem;
+    letter-spacing: 0.0075rem;
+
+    padding: 0.4585rem 0.75rem;
+    gap: 0.5rem;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+  }
+
+  #exp_expandbtn span {
+    display: block;
+  }
+}
+
+#exp_closebtn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: none;
+  cursor: pointer;
+  pointer-events: auto;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  border-radius: 1.5rem;
+  padding: 0.4585rem;
+}
+
+#exp_expandbtn::before,
+#exp_closebtn::before,
+#exp_volumebtn::before {
+  border-radius: 1.5rem;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  content: "";
+}
+
+#exp_expandbtn:hover::before,
+#exp_closebtn:hover::before,
+#exp_volumebtn:hover::before {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#exp_expandbtn:focus,
+#exp_closebtn:focus,
+#exp_mutebtn:focus,
+#exp_unmutebtn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.08);
+}
+
+#exp_volumebtn {
+  /* border: none; */
+  /* background: #576566; */
+  /* width: 42px;
+  height: 42px; */
+  position: absolute;
+  right: 0.75rem;
+  top: 53px;
+  text-align: center;
+  z-index: 5;
+  /* box-shadow: -3px 1px 4px rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+  pointer-events: auto;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  border-radius: 1.5rem;
+  padding: 0.4585rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+/* #exp_volumebtn img {
+  width: 21px;
+  cursor: pointer;
+  pointer-events: auto;
+} */
+#exp_mutebtn {
+  display: flex;
+}
+#exp_unmutebtn {
+  display: none;
+}
+
+#exp_video {
+  /* width: 445px; */
+  /* height: 250px; */
+}
+
+#exp_div .video-js {
+  border: 1px solid #fff;
+  border-top: none;
+  border-bottom: none;
+}
+
+#exp_div .vjs-tech {
+  width: 100%;
+}
