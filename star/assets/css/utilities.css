@@ -1,0 +1,27 @@
+/* changes to card flags/tags area */
+@media screen {
+     .card .card-labels {
+        display: flex !important;
+         align-items: center;
+        gap: 4px;
+    }
+     .old-asset {
+        color: var(--icon-alert-light)!important
+    }
+}
+/* SPORTS RADAR */
+ .score-ticker-container {
+     border-radius: 5px;
+     border: 1px solid rgba(0,0,0,.15);
+     box-shadow: 0 2px 8px 0 rgba(0 0 0 / 8%);
+     background-color: white;
+     margin-bottom: 16px;
+     padding: 16px 4px;
+     min-height: 94px;
+}
+
+
+.grecaptcha-badge {display:none}
+
+/* user dashboard */
+#user-main-menu-wrapper .alert.service.free-trial {display:none;}

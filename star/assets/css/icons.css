@@ -1,0 +1,494 @@
+/* comment icon */
+ .comment-indicator {
+     object-fit: contain;
+     margin-right: 4px;
+     display: inline-block;
+     width: 16px;
+     height: 16px;
+     background: url(../../images/icons/indicator-icon-aggregation.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-4px 
+}
+
+/* comment icon article body */
+.assetConversations .comment-indicator {
+     object-fit: contain;
+     margin-right: 4px;
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: url('../images/indicator-icon-aggregation-blue-heavy.svg') no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px;
+     cursor: pointer;
+}
+
+.assetConversations .comment-indicator-communities {
+     object-fit: contain;
+     margin-right: 4px;
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: url(../../images/icons/indicator-icon-aggregation-communities.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px;
+     cursor: pointer;
+}
+
+/* arrow collapse - false */
+ .icon-arrow-collapse-false {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/arrow-collapse-false.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* arrow collapse - true */
+ .icon-arrow-collapse-true {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/arrow-collapse-true.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* bookmark default - dark mode */
+ .icon-bookmark-default-dark-mode {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/bookmark-default-dark-mode.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* bookmark default */
+ .icon-bookmark-default {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/bookmark-default.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* bookmark saved - dark mode */
+ .icon-bookmark-saved-dark-mode {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/bookmark-saved-dark-mode.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* bookmark default */
+ .icon-bookmark-saved {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/bookmark-saved.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* cancel */
+ .icon-cancel {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url('../images/cancel.svg') no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* circle-check */
+ .icon-circle-check {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/circle-check.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* close */
+ .icon-close {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/close.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* description w/hover state */
+ .icon-description {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/description.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+ .icon-description:hover {
+     background: url(../../images/icons/description-hover.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* dice */
+ .icon-dice {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/dice-icon.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* email w/hover state */
+ .icon-email {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/email.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+ .icon-email:hover {
+     background: url(../../images/icons/email-hover.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* envelope */
+ .icon-envelope {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/envelope.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* error */
+ .icon-error {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/error.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* expand */
+ .icon-expand {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/expand.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* expand-less */
+ .icon-expand-less {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/expand-less.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* facebook */
+ .icon-facebook {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/facebook.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* facebook-circle */
+ .icon-facebook-circle {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/facebook-circle.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* google */
+ .icon-google {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/google.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* guest */
+ .icon-guest {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url('../images/guest.svg') no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* info */
+ .icon-info {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/info.png) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* instagram */
+ .icon-instagram {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/instagram.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* launch */
+ .icon-launch {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/launch.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* link */
+ .icon-link {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/link.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* linkedin */
+ .icon-linkedin {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/linkedin.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* menu */
+ .icon-menu {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/menu.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* podcast w/hover state */
+ .icon-podcast {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/podcast.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+ .icon-podcast:hover {
+     background: url(../../images/icons/podcast-hover.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* search */
+ .icon-search {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/search.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* shield */
+ .icon-shield {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url('../images/shield.svg') no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* signed-in */
+ .icon-signed-in {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/signed-in.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:0 
+}
+/* tiktok */
+ .icon-tiktok {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/tiktok.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* timer */
+ .icon-timer {
+     object-fit: contain;
+     display: inline-block;
+     width: 10px;
+     height: 12px;
+     background: url('../images/timer.svg') no-repeat center center;
+     background-size:contain;
+}
+/* trust */
+ .icon-trust {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url('../images/trust.svg') no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* twitter */
+ .icon-twitter {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/twitter.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* updated */
+ .icon-updated {
+     object-fit: contain;
+     display: inline-block;
+     width: 10px;
+     height: 12px;
+     background: url('../images/updated.svg') no-repeat center center;
+     background-size:contain;
+}
+/* visibility */
+ .icon-visibility {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/visibility.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* warning-errors */
+ .icon-warning-errors {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url('../images/warning-error.svg') no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* warning-updated */
+ .icon-warning-updated {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/warning-updated.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* whatsapp */
+ .icon-whatsapp {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/whatsapp.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+/* youtube */
+ .icon-youtube {
+     object-fit: contain;
+     display: inline-block;
+     width: 24px;
+     height: 24px;
+     background: url(../../images/icons/youtube.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-6px 
+}
+
+/* Location */
+ .icon-location {
+     object-fit: contain;
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: url(../../images/icons/location-green.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-5px 
+}
+
+/* Locations expanded */
+.icon-location-expanded {
+     object-fit: contain;
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background: url(../../images/icons/location-white.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom:-5px 
+}
+
+/* Arrow Down */
+ .icon-down {
+     object-fit: contain;
+     display: inline-block;
+     width: 12px;
+     height: 8px;
+     background: url(../../images/icons/arrow-down.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom: 1px;
+}
+
+/* Arrow Up */
+ .icon-up {
+     object-fit: contain;
+     display: inline-block;
+     width: 12px;
+     height: 8px;
+     background: url(../../images/icons/arrow-up.svg) no-repeat center center;
+     background-size:contain;
+     margin-bottom: 1px;
+}
