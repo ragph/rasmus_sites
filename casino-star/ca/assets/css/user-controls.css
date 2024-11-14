@@ -1,0 +1,268 @@
+/* USERS login */
+.user-controls {
+    height:32px !important;
+    max-height:32px;
+}
+.user-login-panel ul{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.user-login-panel a{
+    text-decoration: none
+}
+.user-login-panel a:hover{
+    color:var(--accent-color)
+}
+.user-controls-menu {
+    background-color:#fff;
+}
+@media screen and (min-width: 992px) {
+.user-login-panel .user-controls-menu{position: absolute;z-index: 50;right: 0;width: 300px;}
+.user-login-panel{position: relative}
+}
+@media screen and (max-width: 991px) {
+.user-login-panel .user-controls-menu{width: 100vw;margin: 0 calc(-50vw + 50%);z-index: 50;position: absolute;left: 0;}
+}
+.user-login-panel .user-controls-menu{box-shadow: 0 10px 40px rgba(0,0,0,.2);}
+.user-login-panel .dropdownMenuButton {
+    height: 32px;
+}
+.user-login-panel .user-controls-menu ul > li a {
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px
+}
+.user-login-panel .user-controls-menu ul > li a > .tnt-svg{
+    background: #ecebec;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding: 5px;
+    color: #c2c0c2
+}
+.user-login-panel a:focus{
+    outline: 0
+}
+.user-login-panel .panel {
+    border: 0;
+    box-shadow: none;
+}
+.user-login-panel .panel *{
+    padding: 0;
+    background: none
+}
+.user-login-panel .panel-group{
+    margin-bottom: 0
+}
+.user-login-panel .panel-title a{
+    column-gap: 10px;
+    align-items: center;
+    justify-content:flex-start !important 
+}
+.user-login-panel .panel-title .tnt-svg:nth-of-type(2){
+    margin-left: auto
+}
+
+.user-login-panel .user-edition{
+    display: flex;
+    flex-direction: column
+}
+.user-login-panel .user-edition span{
+    font-size: 12px
+}
+.user-login-panel .tnt-map-marker-alt{
+    background: none !important;
+    color:var(--accent-color) !important;
+    padding: 0 !important
+}
+.user-login-panel .user-locations{
+    background:#f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+.user-login-panel .user-controls-menu ul.user-locations > li a {
+    justify-content: center;
+    border-bottom:1px solid #fff
+}
+.user-login-panel .dropdownMenuButton{
+    display: flex;
+    height: 32px;
+    max-height: 32px;
+    align-items: center;
+    column-gap: 10px;
+    background: none !important;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: none;
+    color:var(--accent-color);
+    max-height: 32px !important;
+    border:1px solid #2A6EB7;
+    font-weight:700;
+}
+.user-login-panel .dropdownMenuButton.userIcon {
+    border: none;
+}
+.user-login-panel.mobile, .user-login-panel.static {
+    width:30px;
+}
+.user-login-panel.static .dropdownMenuButton, .user-login-panel.mobile .dropdownMenuButton{
+    align-items: right;
+    padding-left:0;
+    padding-right:0;
+    border:none;
+    column-gap:2px;
+}
+.user-login-panel.static .dropdownMenuButton .userName, .user-login-panel.mobile .dropdownMenuButton .userName{
+    display:none;
+}
+
+.user-login-panel .icon-guest{
+    margin-bottom:0
+}
+.user-login-panel .user-locations .active {
+     color: #fff;
+     background-color: var(--accent-color);
+}
+
+#torstar-user .btn{font-weight: 800;padding: 0 .5rem !important}
+#torstar-user .userName{margin:0 10px}
+.user-controls .dropdownMenuButton.loggedout .userPanelIndicator {
+    display:none;
+}
+.user-controls .dropdownMenuButton.loggedin .userPanelIndicator {
+    display:block;
+}
+.user-login-panel .closed {
+    max-height: 0;
+    transition: max-height 0.05s ease-out;
+    overflow: hidden;
+}
+
+.user-login-panel .open {
+    max-height: 750px;
+    transition: max-height 0.05s ease-in;
+}
+.user-login-panel .staticNavUser .userName, .user-login-panel .staticNavUser .userPanelIndicator {
+    display:none;
+}
+.user-controls-main {
+    display:flex;
+}
+
+/* user promo for user controls */
+.user-promo {
+    display:flex;
+}
+.user-promo .hidden {display:none;}
+
+.user-promo-button{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--accent-color);
+     min-height:32px;
+     border-color: var(--accent-color);
+     padding: 2px 8px;
+     border-radius: 5px 
+}
+.user-promo-mobile .user-promo-button {
+    background-color: #fff;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+.user-promo-mobile .user-promo-button:hover{
+    background-color: var(--accent-color2);
+    color: white;
+}
+.user-promo-button:hover{
+     background-color: var(--accent-color2);
+}
+.user-promo-button div{
+     white-space: nowrap;
+     padding: 0;
+     margin: 0;
+     color: #fff;
+     text-decoration: none !important 
+}
+.user-promo-button .line1{
+     font-size: 12px;
+     font-weight: 700;
+     line-height: 11px 
+}
+.user-promo-button .line2{
+     font-size: 10px;
+     font-weight: 400 
+}
+.user-promo-button a{
+     text-decoration: none !important 
+}
+ @media (max-width: 991px){
+    .user-promo-button {
+         margin-right: 10px 
+    }
+    .user-promo-button .line2{
+         display: none 
+    }
+    .user-promo-button .line1{
+         margin-bottom: 0;
+         font-size:12px;
+         font-weight: 700;
+         color: var(--accent-color);
+         text-decoration: none 
+    }
+}
+.user-promo-mobile a {
+    text-decoration:none;
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 11px;
+}
+.user-promo-mobile a:hover {
+    color:#fff
+}
+.user-controls-main{
+    column-gap: 10px
+}
+ @media (max-width: 767px){
+    .user-controls-main {
+        column-gap: 0
+    }
+ }
+ .user-promo-desktop.right {
+     margin-left: 5px;
+ }
+ .user-controls-search-button{
+    display: flex;
+    width:28px;
+    height: 30px;
+}
+ .user-controls-search-button button{
+    width: 100%;
+    background: #fff;
+    border:1px solid #2A6EB7;
+    border-radius:5px;
+    color: var(--accent-color)
+}
+ .user-controls-search form{
+    display: flex;
+    column-gap: 10px;
+    align-items: center
+}
+.user-controls-cancel-button span{
+    background: var(--accent-color);
+    color: #fff;
+    border:0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

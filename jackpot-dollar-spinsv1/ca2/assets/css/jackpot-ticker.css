@@ -1,0 +1,35 @@
+.ticker-container-wrapperv2 {
+	background: url(../images/atlantean.png);
+	background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 200px;
+    margin: 25px auto;
+}	 
+
+.ticker-container-wrapperv2 .ticker-container {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 220px;
+    float: left;
+    left: 65px;
+    top: 132px;
+    bottom: 0px;
+}
+
+.ticker-container-wrapperv2 .ticker {
+	color: #fff;
+	font-size: 38px;
+	letter-spacing: 2px;	
+	font-weight: bold;
+	text-shadow: 
+		0 0 5px rgba(0, 0, 0, 0.5), /* Subtle inner shadow */
+		0 0 10px rgba(0, 0, 0, 0.5), /* Medium inner shadow */
+		0 0 15px rgba(0, 0, 0, 0.5), /* Stronger inner shadow */
+		0 0 20px rgba(0, 0, 0, 0.5); /* Strongest inner shadow */
+    padding: 8px; /* Space around each item */
+	text-align: center;
+}

@@ -1,0 +1,79 @@
+/*
+--stn-player-adProgressBarTrackColor #FF0;
+--stn-player-adProgressBarTrackTimeLeftColor transparent;
+--stn-player-adProgressBarThumbColor rgb(255, 255, 255);
+--stn-player-progressBarTrackColor #F3B91A;
+--stn-player-progressBarTrackTimeLeftColor transparent;
+--stn-player-progressBarThumbColor rgb(255, 255, 255);
+--stn-player-timeElapsedColorMini #F3B91A;
+--stn-player-timeRemainingColorMini rgb(255, 255, 255);
+--stn-player-adVolumeBarTrackColor #F3B91A;
+--stn-player-adVolumeBarTrackUnusedColor rgba(0,0,0,0.3);
+--stn-player-adVolumeBarThumbColor rgb(255, 255, 255);
+--stn-player-volumeBarTrackColor #F3B91A;
+--stn-player-volumeBarTrackUnusedColor rgba(0,0,0,0.3);
+--stn-player-volumeBarThumbColor rgb(255, 255, 255);
+--stn-player-barkerSelectedPlaylistItemBackgroundColor inherit;
+--stn-player-barkerSelectedPlaylistItemLeftBorderColor #045473;
+--stn-player-hoveredPlaylistItemTitleColor #045473;
+--stn-player-selectedPlaylistItemBackgroundColor rgb(217, 217, 217);
+--stn-player-adVolumeBarTrackColor #F3B91A;
+--stn-player-adVolumeBarTrackUnusedColor rgba(0,0,0,0.3);
+--stn-player-adVolumeBarThumbColor rgb(255, 255, 255);
+--stn-player-volumeBarTrackColor #F3B91A;
+--stn-player-volumeBarTrackUnusedColor rgba(0,0,0,0.3);
+--stn-player-volumeBarThumbColor rgb(255, 255, 255);
+--stn-player-barkerSelectedPlaylistItemBackgroundColor inherit;
+--stn-player-barkerSelectedPlaylistItemLeftBorderColor #045473;
+--stn-player-hoveredPlaylistItemTitleColor #045473;
+--stn-player-selectedPlaylistItemBackgroundColor rgb(217, 217, 217);
+--stn-player-selectedPlaylistItemLeftBorderColor transparent;
+--stn-player-bigPlayButtonColor rgb(255, 255, 255);
+--stn-player-bigPlayButtonBackground #F3B91A;
+--stn-player-controlbarActiveButtonsColour #F3B91A;
+--stn-player-panelBackground rgb(241, 241, 241);
+--stn-player-scrollBarColor: var(--accent-color2);
+--stn-player-scrollBarTrackColor rgb(225, 225, 225);
+--stn-player-smartMenuButtonBackground inherit;
+--stn-player-smartMenuButtonColor green;
+--stn-player-menuButtonBackground inherit;
+--stn-player-menuButtonColor inherit;
+--stn-player-spinnerColor1 #95E5E5;
+--stn-player-spinnerColor2 #045473;
+--stn-player-subtitleCueColor rgb(255, 255, 255);
+--stn-player-subtitleCueFontSize 0.75em;
+--stn-player-subtitleCueBackgroundColor #045473;
+--stn-player-titleBarColor rgb(255, 255, 255);
+--stn-player-titleBarButtonsBackground #F3B91A;
+--stn-player-titleBarButtonsBackgroundHover #F3B91A;
+--stn-player-titleBarBackground #045473;
+--stn-player-miniTitleBarColor rgb(255, 255, 255);
+--stn-player-miniTitleBarBackground black;
+--stn-player-miniTitleBarButtonsBackground #F3B91A;
+--stn-player-miniTitleBarButtonsColor white;
+--stn-player-unmuteBackgroundColor #F3B91A;
+--stn-player-unmuteColor rgb(255, 255, 255);
+--stn-player-upNextBannerColor rgb(255, 255, 255);
+--stn-player-upNextBannerBackground #045473;
+--stn-player-playerBackground rgb(249, 249, 249);
+*/
+body{
+    --stn-player-titleBarColor: var(--site-bg-color);
+    --stn-player-titleBarBackground: var(--accent-color2);
+    --stn-player-scrollBarColor: var(--accent-color2);
+    --stn-player-subtitleCueBackgroundColor: var(--accent-color2);
+    --stn-player-spinnerColor2:  var(--accent-color2);
+    --stn-player-barkerSelectedPlaylistItemLeftBorderColor:  var(--accent-color2);
+    --stn-player-hoveredPlaylistItemTitleColor:  var(--accent-color2);
+}
+
+.stn-smart-player-component {
+    min-height: 550px;
+    margin-bottom:20px;
+}
+@media only screen and (max-width: 768px){
+    .stn-smart-player-component {
+        min-height: 245px;
+        margin-bottom:10px;
+    }
+}

@@ -1,0 +1,79 @@
+.ticker-container-wrapperv2 {
+	background: url(../images/atlantean.png);
+	background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 200px;
+    margin: 25px auto;
+}	 
+
+.ticker-container-wrapperv2 .ticker-container {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 220px;
+    float: left;
+    left: 65px;
+    top: 132px;
+    bottom: 0px;
+}
+
+.ticker-container-wrapperv2 .ticker {
+	color: #fff;
+	font-size: 34px;
+	letter-spacing: 2px;	
+	font-weight: bold;
+	text-shadow: 
+		0 0 5px rgba(0, 0, 0, 0.5), /* Subtle inner shadow */
+		0 0 10px rgba(0, 0, 0, 0.5), /* Medium inner shadow */
+		0 0 15px rgba(0, 0, 0, 0.5), /* Stronger inner shadow */
+		0 0 20px rgba(0, 0, 0, 0.5); /* Strongest inner shadow */
+    padding: 2px; /* Space around each item */
+	text-align: center;
+}
+
+.dot {
+    opacity: 0;
+    animation: blink 1.5s infinite;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0px;
+}
+
+.dot:nth-child(1) {
+	animation-delay: 0s; /* No delay for the first dot */
+}
+
+.dot:nth-child(2) {
+	animation-delay: 0.5s; /* Delay for the second dot */
+}
+
+.dot:nth-child(3) {
+	animation-delay: 1s; /* Delay for the third dot */
+}
+
+.loading {
+    display: flex;
+    position: relative;
+    left: 36px;
+    font-weight: normal;
+	font-style: italic;
+}
+
+.loading-text {
+
+}
+
+@keyframes blink {
+	0%, 20% {
+		opacity: 0; /* Invisible at the start */
+	}
+	50% {
+		opacity: 1; /* Fully visible at the middle */
+	}
+	80%, 100% {
+		opacity: 0; /* Invisible again */
+	}
+}

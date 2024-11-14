@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Winner Ticker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+		.ticker-container-wrapper {
+			background: url(assets/images/AQRM---5982---Creative-Request---Jackpot-banner-background---Marketing-Fix2.png);
+			background-size: cover;
+			position: relative;
+			background-repeat: no-repeat;
+			width: 500px;
+			height: 94px;
+		}	
+		.ticker-container {
+			position: relative;
+			right: 37px;
+			text-align: center;
+			top: 32px;
+			width: 316px;
+			float: right;
+			display: block;
+			overflow: hidden;
+			color: #fff;
+		}
+        .winner-item {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+		.winner-name {
+			font-size: 12px;
+		}
+		.winner-amount {
+			font-size: 34px;
+			letter-spacing: 2px;	
+			font-weight: bold;
+			text-shadow: 
+				0 0 5px rgba(0, 0, 0, 0.5), /* Subtle inner shadow */
+                0 0 10px rgba(0, 0, 0, 0.5), /* Medium inner shadow */
+                0 0 15px rgba(0, 0, 0, 0.5), /* Stronger inner shadow */
+                0 0 20px rgba(0, 0, 0, 0.5); /* Strongest inner shadow */
+		}
+    </style>
+</head>
+<body>
+<div class="ticker-container-wrapper" id="tickerContainerWrapper">
+    <div class="ticker-container" id="tickerContainer">
+        <!-- Winners will be displayed here -->
+    </div>
+</div>
+    <script>
+        const tickerContainer = document.getElementById('tickerContainer');
+        let currentWinnerIndex = 0;
+        let winners = [];
+
+        async function fetchWinnerData() {
+            try {
+                const response = await fetch('response.xml');
+                const data = await response.text();
+                return data;
+            } catch (error) {
+                console.error('Error fetching winner data:', error);
+            }
+        }
+
+        function parseWinnerData(xml) {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xml, "application/xml");
+            const winnerNodes = xmlDoc.getElementsByTagName("jackpot");
+			const splicedArray = [];
+			
+			const itemsArray = Array.from(winnerNodes);
+            
+			itemsArray.forEach(item => {
+				const amount = parseInt(item.getElementsByTagName("sum")[0].textContent.replace(/\s+/g, ''), 10);
+				const nameH = item.getElementsByTagName("name")[0].textContent;
+				
+				//if(name == 'Atlantean Treasures: Mega Moolah') {
+					if (amount > 100000) {
+						const item = {
+								name: nameH,   // Key
+								amount: amount // Value
+							};
+							
+						splicedArray.push(item);
+					}
+				//}
+			});
+		
+			const uniqueById = Array.from(new Set(splicedArray.map(item => item.amount))).map(amount => splicedArray.find(item => item.amount === amount));
+
+            return uniqueById;
+        }
+
+		function formatNumber(numberStr) {
+			try {
+				if (typeof numberStr !== 'string') {
+					numberStr = String(numberStr);
+				}
+				return numberStr.replace(/\s/g, ",");
+			} catch (error) {
+				console.error("Error formatting number:", error);
+				return numberStr;
+			}
+		}
+		
+        function displayWinner(winner) { 
+            const winnerItem = document.createElement('div');
+		
+            winnerItem.className = 'winner-item';
+			winnerItem.innerHTML = '<div class="winner-amount">$'+winner.amount.toLocaleString()+'</div>';
+            tickerContainer.innerHTML = '';
+            tickerContainer.appendChild(winnerItem);
+
+            // Trigger reflow to ensure the transition works
+            winnerItem.offsetHeight;
+
+            // Fade in
+            winnerItem.style.opacity = 1;
+        }
+
+        function rotateWinners() {
+            if (winners.length === 0) return;
+
+            const currentWinner = winners[currentWinnerIndex]; 
+            displayWinner(currentWinner);
+
+            currentWinnerIndex = (currentWinnerIndex + 1) % winners.length;
+        }
+
+        async function initTicker() {
+            const xmlData = await fetchWinnerData();
+            winners = parseWinnerData(xmlData);
+
+            rotateWinners();
+            setInterval(() => {
+                const currentItem = tickerContainer.querySelector('.winner-item');
+                currentItem.style.opacity = 0;
+
+                setTimeout(() => {
+                    rotateWinners();
+                }, 500); // Match this duration with the CSS transition duration
+            }, 3500); // Change winner every 5 seconds
+        }
+
+        initTicker();
+    </script>
+</body>
+</html>

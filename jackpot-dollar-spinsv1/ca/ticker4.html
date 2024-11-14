@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Winner Ticker</title>
+    <style>
+	body {
+		font-family: Arial, sans-serif;
+	}
+
+	.ticker-container-wrapper {
+		background: url(assets/images/AQRM---5982---Creative-Request---Jackpot-banner-background---Marketing-Fix-v222.png);
+		background-size: cover;
+		position: relative;
+		background-repeat: no-repeat;
+		width: 440px;
+		height: 66px;
+	}	
+
+	.ticker-container {
+		height: 43px;
+		overflow: hidden;
+		position: relative;
+		margin: 0 auto;
+		width: 234px;
+		float: left;
+		left: 196px;
+		top: 10px;
+		flex-direction: column;
+		position: absolute;
+	}
+
+	.ticker {
+		display: flex; /* Use flexbox for vertical alignment */
+		flex-direction: column; /* Stack items vertically */
+		position: absolute; /* Position absolute for smooth scrolling */
+	}
+
+	.ticker-item {
+		font-size: 30px;
+		letter-spacing: 3px;	
+		font-weight: bold;
+		text-shadow: 
+			0 0 5px rgba(255, 255, 255, 0.7), /* Subtle inner glow */
+			0 0 10px rgba(255, 255, 255, 0.7), /* Medium inner glow */
+			0 0 15px rgba(255, 255, 255, 0.7), /* Stronger inner glow */
+			0 0 20px rgba(255, 255, 255, 0.7); /* Strongest inner glow */
+		padding: 8px; /* Space around each item */
+		text-align: center;
+	}
+    </style>
+</head>
+<body>
+	<div class="ticker-container-wrapper">
+		<div class="ticker-container">
+			<div class="ticker" id="ticker1">
+
+			</div>
+		</div>
+	</div>
+
+    <script>
+ const pauseDuration = 800; // Pause duration in milliseconds
+const scrollDuration = 100; // Duration to scroll to the next item
+const tickerContainer = document.getElementById('ticker1');
+
+	async function fetchWinnerData() {
+		try {
+			const response = await fetch('response.xml');
+			const data = await response.text();
+			return data;
+		} catch (error) {
+			console.error('Error fetching winner data:', error);
+		}
+	}
+	
+	function parseWinnerData(xml) {
+		const parser = new DOMParser();
+		const xmlDoc = parser.parseFromString(xml, "application/xml");
+		const winnerNodes = xmlDoc.getElementsByTagName("jackpot");
+		const splicedArray = [];
+		
+		const itemsArray = Array.from(winnerNodes);
+		
+		itemsArray.forEach(item => {
+			const amount = parseInt(item.getElementsByTagName("sum")[0].textContent.replace(/\s+/g, ''), 10);
+			const nameH = item.getElementsByTagName("name")[0].textContent;
+			
+			//if(name == 'Atlantean Treasures: Mega Moolah') {
+				if (amount > 10000 && nameH != 'Totals') {
+					const item = {
+							name: nameH,   // Key
+							amount: amount // Value
+						};
+						
+					splicedArray.push(item);
+				}
+			//}
+		});
+	
+		const uniqueById = Array.from(new Set(splicedArray.map(item => item.amount))).map(amount => splicedArray.find(item => item.amount === amount));
+
+		return uniqueById;
+	}	
+	
+	function displayWinner(winner) { 
+		const winnerItem = document.createElement('div');
+		
+		winnerItem.className = 'ticker-item';
+		winnerItem.innerHTML = '$'+winner.amount.toLocaleString()+'';
+		//tickerContainer.innerHTML = '';
+		tickerContainer.appendChild(winnerItem);
+
+		// Trigger reflow to ensure the transition works
+		//winnerItem.offsetHeight;
+
+		// Fade in
+		//winnerItem.style.opacity = 1;
+	}	
+	
+	async function initTicker() {
+		
+		const xmlData = await fetchWinnerData();
+        winners = parseWinnerData(xmlData);
+		let totalItemsU = winners.length; 
+		const tickers = document.querySelectorAll('.ticker');
+		let currentIndex = 0;
+			
+		for (let i = 0; i < winners.length; i++) {
+			displayWinner(winners[i]); 
+		} 
+		
+		const ticker = document.getElementById('ticker1');
+		const items = ticker.querySelectorAll('.ticker-item');
+
+		// Clone the items to create a seamless effect
+		const clonedItems = [...items].map(item => item.cloneNode(true));
+		clonedItems.forEach(item => ticker.appendChild(item));
+
+		// Calculate the height of the items
+		const itemHeight = items[0].offsetHeight;
+
+		// Set the initial height of the ticker
+		ticker.style.height = `${itemHeight}px`;
+			
+		// Function to scroll to the next item
+		function scrollToNextItem() {
+			// Set the ticker position to scroll to the next item
+			ticker.style.transition = `transform ${scrollDuration}ms ease`;
+			ticker.style.transform = `translateY(-${(currentIndex + 1) * itemHeight}px)`;
+
+			// Pause before scrolling to the next item
+			setTimeout(() => {
+				currentIndex++;
+				// Reset the position if we reach the end of the original items
+				if (currentIndex === items.length) {
+					ticker.style.transition = 'none'; // Disable transition for instant reset
+					ticker.style.transform = 'translateY(0)'; // Reset position
+					currentIndex = 0; // Reset index
+				}
+				// Call the function again to continue scrolling
+				setTimeout(scrollToNextItem, pauseDuration);
+			}, scrollDuration);
+		}
+
+		// Start the scrolling for the ticker
+		scrollToNextItem();
+	}
+	
+	initTicker();
+    </script>
+</body>
+</html>
